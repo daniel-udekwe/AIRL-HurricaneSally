@@ -1,0 +1,32 @@
+\begin{tabular}{lllllrrrrr}
+\toprule
+task & regime & model & cond & stage & fits & median_selected_epoch & q25 & q75 & frac_reached_max_epochs \\
+\midrule
+classify & pooled & mlp & airl & train & 100 & 41.000 & 9.000 & 48.000 & 0.510 \\
+classify & pooled & mlp & airl_H & train & 100 & 44.500 & 11.000 & 49.250 & 0.560 \\
+classify & pooled & mlp & airl_P & train & 100 & 41.000 & 10.000 & 49.000 & 0.530 \\
+classify & pooled & mlp & bc & train & 100 & 41.500 & 10.000 & 48.000 & 0.540 \\
+classify & pooled & mlp & empirical & train & 100 & 40.500 & 9.000 & 48.000 & 0.510 \\
+classify & pooled & mlp & logit & train & 100 & 37.000 & 9.000 & 48.000 & 0.460 \\
+classify & pooled & mlp & none & train & 100 & 44.500 & 33.000 & 49.250 & 0.590 \\
+classify & pooled & mlp & route_id & train & 100 & 34.500 & 10.000 & 49.000 & 0.430 \\
+classify & pooled & mlp & route_id+airl & train & 100 & 34.500 & 9.000 & 44.000 & 0.410 \\
+classify & pooled & mlp & route_id+bc & train & 100 & 34.500 & 9.750 & 45.000 & 0.410 \\
+classify & pooled & mlp & route_id+empirical & train & 100 & 33.500 & 9.000 & 45.250 & 0.390 \\
+classify & pooled & mlp & topology & train & 100 & 44.500 & 10.750 & 50.000 & 0.590 \\
+forecast & 2020_only & lstm & airl & train & 400 & 8.000 & 4.000 & 13.000 & 0.003 \\
+forecast & 2020_only & lstm & none & train & 400 & 8.000 & 4.000 & 12.000 & 0.000 \\
+forecast & finetune & lstm & airl & finetune & 400 & 10.000 & 5.000 & 20.000 & 0.030 \\
+forecast & finetune & lstm & airl & pretrain & 400 & 9.000 & 7.000 & 12.000 & 0.000 \\
+forecast & finetune & lstm & none & finetune & 400 & 11.000 & 5.000 & 22.000 & 0.037 \\
+forecast & finetune & lstm & none & pretrain & 400 & 17.000 & 9.000 & 25.000 & 0.013 \\
+forecast & pooled & lstm & airl & train & 5 & 5.000 & 4.000 & 6.000 & 0.000 \\
+forecast & pooled & lstm & none & train & 5 & 3.000 & 1.000 & 5.000 & 0.000 \\
+forecast & pooled & lstm & route_id+airl & train & 400 & 7.000 & 5.000 & 13.000 & 0.003 \\
+forecast & pooled & lstm & route_id+bc & train & 400 & 7.000 & 5.000 & 12.000 & 0.000 \\
+forecast & pooled & lstm & route_id+empirical & train & 400 & 7.000 & 5.000 & 12.000 & 0.003 \\
+forecast & pooled & rnn & none & train & 5 & 11.000 & 9.000 & 11.000 & 0.000 \\
+forecast & pretrain_only & lstm & airl & train & 400 & 9.000 & 7.000 & 12.000 & 0.000 \\
+forecast & pretrain_only & lstm & none & train & 400 & 16.500 & 9.000 & 22.000 & 0.000 \\
+\bottomrule
+\end{tabular}

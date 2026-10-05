@@ -1,0 +1,62 @@
+\begin{tabular}{lrllrrrrlrrll}
+\toprule
+phase & horizon_min & ref & cand & n & n_days & MAE_ref & MAE_cand & dMAE [95% CI] & seed SD & dMAE_pct & p_DM (Holm) & p_boot (Holm) \\
+\midrule
+pre_landfall & 15 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 2107 & 8 & 11.076 & 11.348 & -0.27 [-0.42, -0.12] & 0.180 & -2.458 & 0.000*** & 0.000*** \\
+pre_landfall & 15 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 2107 & 8 & 11.190 & 11.348 & -0.16 [-0.30, -0.01] & 0.290 & -1.415 & 0.000*** & 0.210 \\
+pre_landfall & 30 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 2107 & 8 & 11.218 & 11.413 & -0.20 [-0.37, -0.03] & 0.390 & -1.739 & 0.000*** & 0.021* \\
+pre_landfall & 30 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 2107 & 8 & 11.384 & 11.413 & -0.03 [-0.23, +0.12] & 0.300 & -0.251 & 0.515 & 1.000 \\
+pre_landfall & 60 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 2107 & 8 & 11.905 & 11.967 & -0.06 [-0.12, -0.00] & 0.110 & -0.521 & 0.004** & 0.210 \\
+pre_landfall & 60 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 2107 & 8 & 12.040 & 11.967 & +0.07 [+0.01, +0.16] & 0.090 & 0.604 & 0.127 & 0.210 \\
+pre_landfall & 90 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 2107 & 8 & 12.114 & 12.124 & -0.01 [-0.12, +0.08] & 0.080 & -0.089 & 0.515 & 1.000 \\
+pre_landfall & 90 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 2107 & 8 & 12.149 & 12.124 & +0.03 [-0.04, +0.10] & 0.110 & 0.206 & 0.921 & 1.000 \\
+landfall & 15 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 560 & 4 & 10.531 & 10.492 & +0.04 [-0.14, +0.10] & 0.090 & 0.365 & 0.308 & 1.000 \\
+landfall & 15 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 560 & 4 & 10.583 & 10.492 & +0.09 [-0.13, +0.23] & 0.050 & 0.859 & 0.181 & 1.000 \\
+landfall & 30 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 560 & 4 & 10.863 & 10.884 & -0.02 [-0.21, +0.29] & 0.250 & -0.194 & 0.907 & 1.000 \\
+landfall & 30 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 560 & 4 & 10.989 & 10.884 & +0.11 [+0.02, +0.28] & 0.240 & 0.956 & 0.016* & 0.000*** \\
+landfall & 60 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 560 & 4 & 10.948 & 10.788 & +0.16 [+0.05, +0.64] & 0.140 & 1.463 & 0.009** & 0.042* \\
+landfall & 60 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 560 & 4 & 10.926 & 10.788 & +0.14 [+0.03, +0.26] & 0.140 & 1.258 & 0.011* & 0.000*** \\
+landfall & 90 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 560 & 4 & 10.888 & 10.799 & +0.09 [-0.07, +0.61] & 0.160 & 0.813 & 0.112 & 1.000 \\
+landfall & 90 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 560 & 4 & 10.883 & 10.799 & +0.08 [-0.00, +0.51] & 0.070 & 0.766 & 0.112 & 0.400 \\
+recovery & 15 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 2553 & 9 & 7.720 & 7.769 & -0.05 [-0.09, -0.01] & 0.040 & -0.633 & 0.008** & 0.140 \\
+recovery & 15 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 2553 & 9 & 7.739 & 7.769 & -0.03 [-0.06, +0.00] & 0.040 & -0.386 & 0.135 & 0.480 \\
+recovery & 30 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 2553 & 9 & 7.872 & 7.922 & -0.05 [-0.08, -0.02] & 0.040 & -0.639 & 0.059 & 0.016* \\
+recovery & 30 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 2553 & 9 & 7.925 & 7.922 & +0.00 [-0.03, +0.03] & 0.060 & 0.042 & 0.658 & 1.000 \\
+recovery & 60 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 2553 & 9 & 8.003 & 8.052 & -0.05 [-0.10, +0.01] & 0.060 & -0.601 & 0.047* & 0.565 \\
+recovery & 60 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 2553 & 9 & 8.067 & 8.052 & +0.02 [-0.03, +0.06] & 0.030 & 0.195 & 0.616 & 1.000 \\
+recovery & 90 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 2553 & 9 & 8.062 & 8.112 & -0.05 [-0.11, +0.01] & 0.030 & -0.618 & 0.135 & 0.565 \\
+recovery & 90 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 2553 & 9 & 8.139 & 8.112 & +0.03 [-0.03, +0.09] & 0.060 & 0.324 & 0.199 & 1.000 \\
+acute & 15 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 2667 & 11 & 10.961 & 11.168 & -0.21 [-0.35, -0.06] & 0.150 & -1.888 & 0.000*** & 0.032* \\
+acute & 15 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 2667 & 11 & 11.062 & 11.168 & -0.11 [-0.24, +0.03] & 0.230 & -0.958 & 0.000*** & 0.730 \\
+acute & 30 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 2667 & 11 & 11.143 & 11.302 & -0.16 [-0.31, -0.02] & 0.330 & -1.423 & 0.000*** & 0.070 \\
+acute & 30 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 2667 & 11 & 11.301 & 11.302 & -0.00 [-0.16, +0.12] & 0.250 & -0.005 & 1.000 & 1.000 \\
+acute & 60 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 2667 & 11 & 11.704 & 11.720 & -0.02 [-0.08, +0.05] & 0.110 & -0.131 & 1.000 & 1.000 \\
+acute & 60 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 2667 & 11 & 11.806 & 11.720 & +0.09 [+0.02, +0.16] & 0.080 & 0.731 & 0.003** & 0.070 \\
+acute & 90 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 2667 & 11 & 11.856 & 11.846 & +0.01 [-0.08, +0.10] & 0.090 & 0.085 & 1.000 & 1.000 \\
+acute & 90 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 2667 & 11 & 11.883 & 11.846 & +0.04 [-0.02, +0.11] & 0.100 & 0.314 & 1.000 & 0.960 \\
+rolling_all & 15 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 5220 & 19 & 9.376 & 9.506 & -0.13 [-0.22, -0.05] & 0.060 & -1.383 & 0.000*** & 0.000*** \\
+rolling_all & 15 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 5220 & 19 & 9.437 & 9.506 & -0.07 [-0.15, -0.00] & 0.110 & -0.729 & 0.000*** & 0.250 \\
+rolling_all & 30 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 5220 & 19 & 9.543 & 9.649 & -0.11 [-0.20, -0.03] & 0.190 & -1.106 & 0.000*** & 0.000*** \\
+rolling_all & 30 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 5220 & 19 & 9.650 & 9.649 & +0.00 [-0.08, +0.07] & 0.150 & 0.014 & 1.000 & 0.990 \\
+rolling_all & 60 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 5220 & 19 & 9.894 & 9.926 & -0.03 [-0.07, +0.01] & 0.060 & -0.317 & 0.386 & 0.588 \\
+rolling_all & 60 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 5220 & 19 & 9.978 & 9.926 & +0.05 [+0.01, +0.10] & 0.040 & 0.519 & 0.003** & 0.072 \\
+rolling_all & 90 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 5220 & 19 & 10.001 & 10.020 & -0.02 [-0.08, +0.04] & 0.060 & -0.192 & 1.000 & 0.990 \\
+rolling_all & 90 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 5220 & 19 & 10.052 & 10.020 & +0.03 [-0.01, +0.08] & 0.070 & 0.318 & 0.386 & 0.588 \\
+late & 15 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 4983 & 18 & 8.103 & 8.096 & +0.01 [-0.00, +0.02] & 0.020 & 0.085 & 0.516 & 0.340 \\
+late & 15 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 4983 & 18 & 8.101 & 8.096 & +0.00 [-0.00, +0.01] & 0.020 & 0.056 & 0.336 & 0.468 \\
+late & 30 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 4983 & 18 & 8.182 & 8.168 & +0.01 [+0.00, +0.03] & 0.040 & 0.167 & 0.002** & 0.119 \\
+late & 30 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 4983 & 18 & 8.179 & 8.168 & +0.01 [+0.00, +0.02] & 0.040 & 0.135 & 0.004** & 0.162 \\
+late & 60 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 4983 & 18 & 8.245 & 8.248 & -0.00 [-0.01, +0.00] & 0.010 & -0.032 & 1.000 & 0.782 \\
+late & 60 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 4983 & 18 & 8.252 & 8.248 & +0.00 [-0.00, +0.01] & 0.010 & 0.052 & 0.437 & 0.356 \\
+late & 90 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 4983 & 18 & 8.289 & 8.288 & +0.00 [-0.01, +0.01] & 0.010 & 0.004 & 1.000 & 0.880 \\
+late & 90 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 4983 & 18 & 8.297 & 8.288 & +0.01 [+0.00, +0.01] & 0.010 & 0.102 & 0.014* & 0.016* \\
+all & 15 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 10203 & 37 & 8.754 & 8.817 & -0.06 [-0.12, -0.02] & 0.040 & -0.719 & 0.000*** & 0.024* \\
+all & 15 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 10203 & 37 & 8.784 & 8.817 & -0.03 [-0.08, +0.01] & 0.060 & -0.375 & 0.001*** & 0.468 \\
+all & 30 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 10203 & 37 & 8.878 & 8.926 & -0.05 [-0.10, -0.01] & 0.110 & -0.533 & 0.001*** & 0.108 \\
+all & 30 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 10203 & 37 & 8.932 & 8.926 & +0.01 [-0.04, +0.04] & 0.090 & 0.068 & 0.778 & 1.000 \\
+all & 60 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 10203 & 37 & 9.089 & 9.106 & -0.02 [-0.04, +0.00] & 0.030 & -0.191 & 0.366 & 0.468 \\
+all & 60 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 10203 & 37 & 9.135 & 9.106 & +0.03 [+0.01, +0.06] & 0.020 & 0.313 & 0.003** & 0.063 \\
+all & 90 & pooled/lstm/route_id+empirical & pooled/lstm/route_id+airl & 10203 & 37 & 9.165 & 9.174 & -0.01 [-0.04, +0.02] & 0.030 & -0.106 & 0.778 & 1.000 \\
+all & 90 & pooled/lstm/route_id+bc & pooled/lstm/route_id+airl & 10203 & 37 & 9.195 & 9.174 & +0.02 [-0.00, +0.04] & 0.040 & 0.223 & 0.189 & 0.310 \\
+\bottomrule
+\end{tabular}

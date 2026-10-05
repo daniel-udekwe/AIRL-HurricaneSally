@@ -1,0 +1,9 @@
+work/*
+!work/tables/
+!work/figures/
+tables_round1/
+__pycache__/
+*.pyc
+*.parquet
+*.gz
+.venv/
