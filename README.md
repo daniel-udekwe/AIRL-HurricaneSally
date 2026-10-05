@@ -1,4 +1,4 @@
-# Revision pipeline — TRC-26-03399 resubmission
+# Revision pipeline 
 
 This pipeline reruns every quantitative result in the manuscript for the four
 study routes (A–D, segment lists in `routes/`), using a design that addresses
@@ -10,8 +10,7 @@ each point in the editor's decision letter.
 pip install -r requirements.txt
 ```
 
-Edit `DATA_ROOT` in `config.py` if your INRIX folder is somewhere other than
-`C:\Users\dau24\Documents\INRIX files\sally2020`.
+Edit `DATA_ROOT` in `config.py` if to your INRIX folder
 
 ## Run order
 
