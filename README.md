@@ -1,4 +1,4 @@
-# Revision pipeline 
+# Full Pipeline 
 
 This pipeline reruns every quantitative result in the manuscript for the four
 study routes (A–D, segment lists in `routes/`), using a design that addresses
